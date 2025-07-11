@@ -5,9 +5,12 @@ General Initial Static Website Mockup Using Bootstrap. Placeholder content only.
 **NOTE: Repository content is still under construction**
 ---
 
-Check the temporary **"Website Live Demo"**
+Check the temporary **[Website Live Demo](https://anmarjarjees.github.io/website-mockup/)**.  
+To open it in a new tab or window, press **Ctrl + click** (or **Right-Click** the link and choose *"Open in new tab/window"*).
 
-The Main Resources:
+---
+
+**Main Resources:**
 
 - Bootstrap:
     - https://getbootstrap.com/
