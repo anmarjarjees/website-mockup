@@ -1,0 +1,35 @@
+/* Temporary and Initial CSS Custom Rules */
+#home {
+  margin-top: 110px;
+  /* This creates space outside the section but not inside it */
+}
+
+/* 
+Start: Styling the card element inside "About" section
+*/
+#about .card {
+  padding: 3px;
+  background-color: wheat;
+  border: 1px solid brown;
+}
+
+/* Add margin-bottom to the column instead */
+#about .col {
+  margin-bottom: 10px;
+  /* or use BS spacing class like mb-3 or mb-4 */
+}
+
+/* 
+NOTE: Another Alternative Solution => Adding BS Class bm-4 for "Margin Bottom
+BS: https://getbootstrap.com/docs/5.3/utilities/spacing/
+
+<div class="col mb-4">
+  <div class="card h-100">
+    ...
+  </div>
+</div>
+*/
+
+/* 
+End: Styling the card element inside "About" section
+*/

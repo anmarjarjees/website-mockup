@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AchieveEd Site Demo</title>
+
+    <!-- Bootstrap Min CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- 
+    Bootstrap Icons:
+    BS: https://icons.getbootstrap.com/
+    BS: https://icons.getbootstrap.com/#install    
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Loading our custom css file: -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 
+        To check the exact pixels for BS breakpoints:
+        link: https://getbootstrap.com/docs/5.3/layout/breakpoints/
+     -->
+    <header>
+        <!-- 
+        Using the BS class: .fixed-top
+        Link: https://getbootstrap.com/docs/5.3/helpers/position/#fixed-top
+        -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="AchieveEd Academy Logo" class="img-thumbnail" width="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- 
+                    class: ms-auto
+                    Link: https://getbootstrap.com/docs/5.3/helpers/stacks/#horizontal
+                    -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Mission</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Programs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Business & Accounting</a></li>
+                                <li><a class="dropdown-item" href="#">Office Administration</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Technician and Networking</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Programming</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+        Keep the carousel in medium screens and up...
+        display-none and md-block
+    -->
+
+    <section id="home" class="bg-warning-subtle">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Text -->
+                <div class="col-md-6 p-1">
+                    <h1>AchieveEd Academy</h1>
+                    <!-- 
+                        class: .lead
+                        https://getbootstrap.com/docs/5.3/content/typography/#lead
+                    -->
+                    <p class="lead">Creating opportunities through flexible, learner-centered education.</p>
+
+                    <p>AchieveEd Academy is built on the belief that education should adapt to people, not the other way
+                        around. We focus on offering accessible and relevant learning experiences for individuals and
+                        organizations alike.</p>
+
+                    <p>Through collaboration, creativity, and practical training, we aim to help learners grow their
+                        skills and unlock new possibilities for the future.</p>
+                    <!-- 
+                        BS: https://getbootstrap.com/docs/5.3/components/buttons/#button-tags
+                    -->
+
+
+                    <a href="#about" class="btn btn-warning rounded-pill">Learn More About Us</a>
+                </div>
+
+                <!-- Right Column: Image Placeholder -->
+                <div class="col-md-6 text-center p-1">
+                    <!-- 
+                    Sizing
+                    Easily make an element as wide or as tall with our width and height utilities.
+                    using: w-50 and w-100
+                    BS: https://getbootstrap.com/docs/5.3/utilities/sizing/
+
+                    Figures:
+                    BS: https://getbootstrap.com/docs/5.3/content/figures/
+
+                    Margin and padding:
+                    BS: https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding
+
+                    Colors:
+                    BS: https://getbootstrap.com/docs/5.3/utilities/colors/#text
+                    -->
+                    <figure class="text-center">
+                        <img src="images/happy-computer-woman.jpg" alt="Education placeholder"
+                            class="img-thumbnail rounded-circle shadow w-75">
+                        <figcaption class="figure-caption mt-2 text-secondary-emphasis">
+                            Photo by AllGo on <a
+                                href="https://unsplash.com/photos/shallow-focus-photo-of-woman-in-red-sleeveless-shirt-LfVZjtuio3M"
+                                target="_blank">Unsplash</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div> <!-- div.row -->
+        </div> <!-- div.container -->
+    </section>
+    <!-- 
+        BS Containers:    
+        class: .container => sets a max-width at each responsive breakpoint
+        Link: https://getbootstrap.com/docs/5.3/layout/containers/
+    -->
+
+    <div class="container">
+        <!-- 
+        
+        bg-gradient
+        -->
+        <section id="mission" class="bg-warning rounded-5 mt-2 border border-warning border-2">
+            <div class="container py-5">
+                <div class="row text-center g-4">
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Inclusive Learning</h4>
+                        <p>Accessible programs that adapt to the needs of learners from all communities and backgrounds.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Flexible Scheduling</h4>
+                        <p>Morning, evening, and weekend options help learners balance education with life commitments.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Industry Alignment</h4>
+                        <p>Curricula shaped by real-world demands to prepare students for today’s evolving careers.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Partnership Power</h4>
+                        <p>Collaborations with institutions and businesses enhance program quality and opportunities.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Digital Access</h4>
+                        <p>Online and hybrid delivery modes ensure seamless access from anywhere in the world.</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h4>Career Outcomes</h4>
+                        <p>Practical, focused training that helps learners reach their career goals with confidence.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container text-center">
+            <h2>Our Team</h2>
+            <p class="lead">Learn more about our directors and the executive team</p>
+            <!-- 
+            Each div/card will have the class: col-md-6 col-lg-3
+            instead of adding it for each div,
+            we can add:
+            - col-md-6 => (12/6 = 2) 2 columns per row for md screen => row-cols-md-2
+            - col-lg-3 => (12/3 = 4) 4 columns per row sm screen => row-cols-lg-4
+
+            Cards Hights:
+            *************
+            having the same hight for each card member for better design:
+            - ".h-100" for Equal Height => adding it to each card. To obtain equal heights by default
+                > .h-100 makes a card fill the height of its parent .col
+            - ".align-items-stretch" makes the .col itself stretch to match the tallest one in the row.
+
+            To summarize:
+            ".align-items-stretch" makes all ".col" elements the same height,
+            but we still need ".h-100" to tell the ".card" to fill that height.
+
+            BS: https://getbootstrap.com/docs/5.3/utilities/flex/#align-items
+            BS: https://getbootstrap.com/docs/5.3/components/card/#grid-cards
+
+
+            -->
+            <div class="row row-cols-md-2 row-cols-lg-4 align-items-stretch">
+                <!-- Adding div for each team member -->
+                <div class="col">
+                    <!--
+                    Cards: Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
+                    BS: https://getbootstrap.com/docs/5.3/components/card/
+
+                    The initial template (with image)
+                    BS https://getbootstrap.com/docs/5.3/components/card/#example
+
+                    style="width: 18rem;" => removed from original
+                    -->
+                    <div class="card h-100">
+                        <img src="images/team/inst01.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Martin Smith</h5>
+                            <p class="card-text text-start">Experienced trainer with a strong background in workforce
+                                development.</p>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="bi-github"></i>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="bi-twitter"></i>
+                            </a>
+                        </div>
+                    </div> <!-- div.card -->
+                </div>
+
+                <!-- add more cards -->
+                <!-- inst02.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst02.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Sam Simpson">
+                        <div class="card-body">
+                            <h5 class="card-title">Sam Simpson</h5>
+                            <p class="card-text text-start">Focused on learner-centered experiences and digital
+                                accessibility.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst03.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst03.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Alex Chow">
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Chow</h5>
+                            <p class="card-text text-start">Passionate about innovation in education and real-world
+                                learning outcomes.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst04.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst04.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="James Dean">
+                        <div class="card-body">
+                            <h5 class="card-title">James Dean</h5>
+                            <p class="card-text text-start">Driven by purpose and passionate about inclusive
+                                education initiatives.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst05.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst05.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Allen Davidson">
+                        <div class="card-body">
+                            <h5 class="card-title">Allen Davidson</h5>
+                            <p class="card-text text-start">Specialist in hybrid learning and curriculum
+                                development.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst06.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst06.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Kevin Lee">
+                        <div class="card-body">
+                            <h5 class="card-title">Kevin Lee</h5>
+                            <p class="card-text text-start">Empowering learners through creative, skills-based
+                                instruction.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst07.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst07.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Robert Diamond">
+                        <div class="card-body">
+                            <h5 class="card-title">Robert Diamond</h5>
+                            <p class="card-text text-start">Dedicated to professional training, leadership, and
+                                growth strategies.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inst08.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/inst08.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Brian Wells">
+                        <div class="card-body">
+                            <h5 class="card-title">Brian Wells</h5>
+                            <p class="card-text text-start">Focused on adaptive learning and emerging technologies
+                                in education.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- w01.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/w01.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Kate Wilson">
+                        <div class="card-body">
+                            <h5 class="card-title">Kate Wilson</h5>
+                            <p class="card-text text-start">Expert in instructional design with a focus on learner
+                                engagement.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- w02.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/w02.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Linda Hamilton">
+                        <div class="card-body">
+                            <h5 class="card-title">Alexa Chow</h5>
+                            <p class="card-text text-start">Committed to creating inclusive and meaningful learning
+                                environments.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- w03.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/w03.jpg" class="card-img-top rounded-circle w-50 m-auto" alt="Alexa Chow">
+                        <div class="card-body">
+                            <h5 class="card-title">Linda Hamilton</h5>
+                            <p class="card-text text-start">Blending technology and education to drive digital
+                                transformation.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- w04.jpg -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/team/w04.jpg" class="card-img-top rounded-circle w-50 m-auto"
+                            alt="Rebeka Marriot">
+                        <div class="card-body">
+                            <h5 class="card-title">Rebeka Marriot</h5>
+                            <p class="card-text text-start">Leader in cross-cultural education and digital
+                                curriculum strategy.</p>
+                            <a href="#" class="btn btn-secondary"><i class="bi-linkedin"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-github"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-facebook"></i></a>
+                            <a href="#" class="btn btn-secondary"><i class="bi-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- section#about .container -->
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
