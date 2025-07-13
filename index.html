@@ -197,7 +197,7 @@
             </div>
         </section>
 
-        <section id="about" class="container text-center">
+        <section id="about" class="text-center">
             <h2>Our Team</h2>
             <p class="lead">Learn more about our directors and the executive team</p>
             <!-- 
@@ -445,28 +445,145 @@
                     </div>
                 </div>
             </div>
-        </section> <!-- section#about .container -->
+        </section> <!-- section#about -->
 
-        <section class="contact">
+        <!-- FAQ  -->
+        <section id="faq" class="mt-3">
+            <!-- 
+        Wrapping this section with a container to keep it aligned within page margins.
+        This ensures consistent spacing and layout across all sections.
+    -->
             <div class="section-hero text-center">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+                <p>Answers to our most frequently asked questions</p>
+            </div>
+            <!-- 
+            Bootstrap Accordion Component 
+            BS: https://getbootstrap.com/docs/5.3/components/accordion/
+            Modified for FAQ section with custom IDs and real Q&A content.
+            -->
+            <div class="accordion" id="accordFAQ">
+
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What topics are covered in this program?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordFAQ">
+                        <div class="accordion-body">
+                            <p>This program covers both front-end and back-end development, databases, UI/UX design,
+                                and essential programming skills to help you become job-ready.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do I need any programming experience to join?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordFAQ">
+                        <div class="accordion-body">
+                            <p>No prior experience is needed. This program is designed for beginners, and we’ll
+                                guide you step-by-step from the basics to more advanced concepts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Are the sessions online or in-person?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordFAQ">
+                        <div class="accordion-body">
+                            <p>Our sessions are delivered 100% online with live classes and hands-on assignments.
+                                Recordings are also provided for flexible learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Can I study on weekends only?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordFAQ">
+                        <div class="accordion-body">
+                            <p>Yes, we offer weekend-only schedules for working professionals or students with
+                                weekday commitments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Will I receive a certificate upon completion?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordFAQ">
+                        <div class="accordion-body">
+                            <p>Yes, participants who successfully complete all required coursework and projects will
+                                receive a certificate of completion from EducationEd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end div.accordion -->
+        </section> <!-- end section#faq -->
+
+        <section id="contact">
+            <div class="section-hero">
                 <h2>Contact Us</h2>
                 <p>write something...</p>
             </div>
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <h2>Visit Our Academy</h2>
+                    <!-- 
+                    Every heading <h2> needs the following BS Styles:
+                    - pt-1 => padding top 1
+                    - border-top
+                    - border-secondary-subtle => light sliver color
+                    - border-2 => border thickness (width) 2
+                    BS: https://getbootstrap.com/docs/5.3/utilities/borders/
+
+                    Instead, applying custom styles
+                    -->
+                    <h2 class="">Visit Our Academy</h2>
                     <p>Under Safety Measures</p>
                     <h3>Address</h3>
                     <p>1234 Yonge St. Unit#10</p>
-                    <p>Tel: 123-456-1234</p>
                     <P>Mon-Fri: 9:00am-5:00pm</P>
                     <P>Sat: 10:00am-4pm</P>
                     <P>Sun: Closed</P>
                     <p>Toronto, Ontario</p>
                     <p>Q1Q 2W3</p>
-                    <h2>General Enquiry Email</h2>
+                    <h3>General Enquiry Contact Number</h3>
+                    <p>Tel: 123-456-1234</p>
+                    <h3>Student Care Centre Number</h3>
+                    <p>Tel: 123-456-7890</p>
+                    <h3>General Enquiry Email</h3>
                     <P>info@AchieveEdAcademy.com</P>
-                    <h2>Registration Email</h2>
+                    <h3>Registration Email</h3>
                     <P>register@AchieveEdAcademy.com</P>
                 </div>
                 <div class="col-md-6">
@@ -482,10 +599,31 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.4384271030535!2d-79.3870568!3d43.6425662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e1!3m2!1sen!2sca!4v1752363596184!5m2!1sen!2sca"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--
+                    Google Map RWD:
+                    - Remove width and height 
+                    - Encapsulate the <iframe> element of google within div of class "ratio"
+                    Bootstrap .ratio helper makes the iframe (Google Map) responsive.
+                    It maintains a consistent aspect ratio (example: 4:3 or 16:9) 
+                    that scales with the screen size.
+
+                    Aspect Ratios Available options include:
+                        - ratio-1x1   => 100% (square)
+                        - ratio-4x3   => 75%
+                        - ratio-16x9  => 56.25% (widescreen)
+                        - ratio-21x9  => 42.86% (ultrawide)
+                        Internally uses padding-bottom to maintain aspect ratio.
+
+                    BS: https://getbootstrap.com/docs/5.3/helpers/ratio/
+                    BS: https://getbootstrap.com/docs/5.3/helpers/ratio/#sass-maps
+                    -->
+                    <div class="ratio ratio-4x3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.4384271030535!2d-79.3870568!3d43.6425662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e1!3m2!1sen!2sca!4v1752363596184!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <form action="">
@@ -518,10 +656,19 @@
         </section>
     </div> <!-- main div.container -->
 
-
-    <section id="footer" class="text-center border-top mt-2 p-2">
-        <p>Website Template Under Development Process</p>
+    <!-- 
+    Footer section with a development notice 
+    - Centered text
+    - Top border to separate it visually from content
+    - Uses Bootstrap utility classes
+    - Styled in a warning theme (yellow background, dark text)
+    -->
+    <section id="footer" class="text-center border-top mt-3 p-3 mb-2 bg-warning text-dark fw-bold">
+        <p class="mb-0">
+            NOTE: This website template is currently under design and development.
+        </p>
     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

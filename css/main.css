@@ -1,7 +1,18 @@
 /* Temporary and Initial CSS Custom Rules */
+/* 
+Start: Styling section#home
+*/
 #home {
   margin-top: 110px;
   /* This creates space outside the section but not inside it */
+}
+
+/* 
+Ending: Styling section#home
+*/
+
+.section-hero {
+  text-align: center;
 }
 
 /* 
@@ -33,3 +44,55 @@ BS: https://getbootstrap.com/docs/5.3/utilities/spacing/
 /* 
 End: Styling the card element inside "About" section
 */
+
+#contact h3 {
+  /* 
+  pt-2: 2 - (by default) for classes that set the margin or padding to $spacer * .5
+  0.5rem => equivalent to Bootstrap's pt-2
+  BS: https://getbootstrap.com/docs/5.3/utilities/spacing/#notation
+  */
+  padding-top: 0.5rem;
+
+  margin-top: 1.5rem;
+  /* 
+  width 2px
+  https://getbootstrap.com/docs/5.3/utilities/borders/#sass-variables
+  */
+  border-top: 2px solid var(--bs-secondary-bg-subtle);
+  /* use Bootstrap variable */
+}
+
+#contact p {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  /* 
+  BS Font Size Classes:
+  **************
+  - .fs-1, .fs-2, ..., .fs-6
+
+  BS: https://getbootstrap.com/docs/5.3/utilities/text/#font-size
+
+  $h1-font-size:                $font-size-base * 2.5;
+  $h2-font-size:                $font-size-base * 2;
+  $h3-font-size:                $font-size-base * 1.75;
+  $h4-font-size:                $font-size-base * 1.5;
+  $h5-font-size:                $font-size-base * 1.25;
+  $h6-font-size:                $font-size-base;
+  
+  $font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size
+  );
+  
+  BS: https://getbootstrap.com/docs/5.3/utilities/text/#sass-variables
+  */
+}
+
+#contact label {
+  font-weight: bold;
+}
