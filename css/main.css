@@ -18,8 +18,22 @@
 #about .card {
   /* Basic card visual styling */
   padding: 3px;
-  background-color: #f5deb3;
+
   border: 1px solid brown;
+}
+
+.mission-icon {
+  background-color: #f5deb3;
+}
+
+.mission-box h4 {
+  background-color: #f5deb3;
+  padding-bottom: 10px;
+}
+
+.mission-box {
+  background-color: #fff8dc;
+  padding-top: 10px;
 }
 
 /* Add margin-bottom to each div.col inside section#about instead of BS class */
