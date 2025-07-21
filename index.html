@@ -83,11 +83,131 @@
             </div>
         </nav>
     </header>
-
     <!-- 
         Keep the carousel in medium screens and up...
         display-none and md-block
+
+        BS: https://getbootstrap.com/docs/5.3/components/carousel/#captions
+
+        This attribute =>  data-bs-ride="carousel"
+        for "Autoplay"
+        BS: https://getbootstrap.com/docs/5.3/components/carousel/#autoplaying-carousels
     -->
+    <section id="carousel" class="container">
+        <div id="carouselMainSamples" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="1" aria-label="Slide 2">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="2" aria-label="Slide 3">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="3" aria-label="Slide 4">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="4" aria-label="Slide 5">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="5" aria-label="Slide 6">
+                </button>
+                <button type="button" data-bs-target="#carouselMainSamples" data-bs-slide-to="6" aria-label="Slide 7">
+                </button>
+            </div> <!-- .carousel-indicators -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/carousel/carousel01.jpg" class="d-block w-100" alt="Carousel Image#01">
+                    <!-- Image 1 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 1</h5>
+                        <p> Photo by Windows</a> on <a
+                                href="https://unsplash.com/photos/men-and-women-sitting-and-standing-while-staring-at-laptop-p74ndnYWRY4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel02.jpg" class="d-block w-100" alt="Carousel Image#02">
+                    <!-- Image 2 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 2</h5>
+                        <p>
+                            Photo by Helena Lopes on
+                            <a href="https://unsplash.com/photos/person-using-black-laptop-computer-2MBtXGq4Pfs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel03.jpg" class="d-block w-100" alt="Carousel Image#03">
+                    <!-- Image 3 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 3</h5>
+                        <p>
+                            Photo by Brooke Cagle on
+                            <a href="https://unsplash.com/photos/a-group-of-friends-at-a-coffee-shop--uHVRvDr7pg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel04.jpg" class="d-block w-100" alt="Carousel Image#04">
+                    <!-- Image 4 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 4</h5>
+                        <p>
+                            Photo by Christina on
+                            <a href="https://unsplash.com/photos/three-women-sitting-beside-wooden-table-c6wbSBaYxkY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel05.jpg" class="d-block w-100" alt="Carousel Image#05">
+                    <!-- Image 5 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 5</h5>
+                        <p>
+                            Photo by Look Studio on
+                            <a href="https://unsplash.com/photos/a-group-of-people-sitting-at-a-table-raising-their-hands-ywQGGrC4o2A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel06.jpg" class="d-block w-100" alt="Carousel Image#06">
+                    <!-- Image 6 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 6</h5>
+                        <p>
+                            Photo by Taylor Flowe on
+                            <a href="https://unsplash.com/photos/laptops-on-a-table-TLLb3EU6tiU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carousel/carousel07.jpg" class="d-block w-100" alt="Carousel Image#07">
+                    <!-- Image 7 -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unsplash Carousel Image 7</h5>
+                        <p>
+                            Photo by Scott Graham on
+                            <a href="https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                                target="_blank">Unsplash</a>
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainSamples"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMainSamples"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> <!-- .carousel-inner -->
+    </section>
 
     <section id="home" class="bg-warning-subtle">
         <div class="container">
@@ -101,8 +221,10 @@
                     -->
                     <p class="lead">Creating opportunities through flexible, learner-centered education.</p>
 
-                    <p>AchieveEd Academy is built on the belief that education should adapt to people, not the other way
-                        around. We focus on offering accessible and relevant learning experiences for individuals and
+                    <p>AchieveEd Academy is built on the belief that education should adapt to people, not the other
+                        way
+                        around. We focus on offering accessible and relevant learning experiences for individuals
+                        and
                         organizations alike.</p>
 
                     <p>Through collaboration, creativity, and practical training, we aim to help learners grow their
@@ -110,8 +232,6 @@
                     <!-- 
                         BS: https://getbootstrap.com/docs/5.3/components/buttons/#button-tags
                     -->
-
-
                     <a href="#about" class="btn btn-warning rounded-pill">Learn More About Us</a>
                 </div>
 
@@ -153,33 +273,35 @@
 
     <div class="container">
         <!-- 
-        
         bg-gradient
         -->
         <section id="mission" class="bg-warning rounded-5 mt-2 border border-warning border-2">
             <div class="container py-5">
                 <div class="row text-center g-4">
-
                     <div class="col-12 col-md-6 col-lg-4">
                         <h4>Inclusive Learning</h4>
-                        <p>Accessible programs that adapt to the needs of learners from all communities and backgrounds.
+                        <p>Accessible programs that adapt to the needs of learners from all communities and
+                            backgrounds.
                         </p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
                         <h4>Flexible Scheduling</h4>
-                        <p>Morning, evening, and weekend options help learners balance education with life commitments.
+                        <p>Morning, evening, and weekend options help learners balance education with life
+                            commitments.
                         </p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
                         <h4>Industry Alignment</h4>
-                        <p>Curricula shaped by real-world demands to prepare students for today's evolving careers.</p>
+                        <p>Curricula shaped by real-world demands to prepare students for today's evolving careers.
+                        </p>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
                         <h4>Partnership Power</h4>
-                        <p>Collaborations with institutions and businesses enhance program quality and opportunities.
+                        <p>Collaborations with institutions and businesses enhance program quality and
+                            opportunities.
                         </p>
                     </div>
 
@@ -190,7 +312,8 @@
 
                     <div class="col-12 col-md-6 col-lg-4">
                         <h4>Career Outcomes</h4>
-                        <p>Practical, focused training that helps learners reach their career goals with confidence.</p>
+                        <p>Practical, focused training that helps learners reach their career goals with confidence.
+                        </p>
                     </div>
 
                 </div>
@@ -240,7 +363,8 @@
                             alt="Team Member">
                         <div class="card-body">
                             <h5 class="card-title">Martin Smith</h5>
-                            <p class="card-text text-start">Experienced trainer with a strong background in workforce
+                            <p class="card-text text-start">Experienced trainer with a strong background in
+                                workforce
                                 development.</p>
                             <a href="#" class="btn btn-secondary">
                                 <i class="bi-linkedin"></i>

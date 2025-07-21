@@ -3,15 +3,6 @@
   Purpose: Styling specific sections beyond Bootstrap defaults
 */
 
-/* 
-SECTION: Home => section#home
-Description: Adds top spacing to avoid overlap with fixed navbar
-*/
-#home {
-  /* Creates external space above this section */
-  margin-top: 110px;
-}
-
 /*
   SECTION: Hero Banner (Generic Title Section) => .section-hero
   Description: Centers all text inside .section-hero
